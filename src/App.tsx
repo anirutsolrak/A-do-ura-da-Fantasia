@@ -42,14 +42,13 @@ function App() {
           <Header />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={
-                <>
-                  <Home />
-                  <Products />
-                  <About />
-                  <Contact />
-                </>
-              } />
+              <Route path="/" element={<Home />} /> {/* Rota para Home */}
+              <Route path="/produtos" element={<Products />} />{' '}
+              {/* Rota para Products */}
+              <Route path="/sobre" element={<About />} />{' '}
+              {/* Rota para About */}
+              <Route path="/contato" element={<Contact />} />{' '}
+              {/* Rota para Contact */}
               <Route path="/produto/:id" element={<ProductDetails />} />
             </Routes>
           </main>
